@@ -1,0 +1,87 @@
+Pre requisites to load u-boot:
+MLO - first stage bootloader
+u-boot.img - 2nd stage boot loader
+u-env.txt(optional) - env variable to load the kernel
+
+Compiling u-boot:
+Get the u-boot mainline 
+	git clone git://git.denx.de/u-boot.git
+	
+	u-boot directory will be cloned
+	cd u-boot/
+
+Set the alias with target architecture and cross tool chain
+	alias armmake='make -jN ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- '
+	Replace N with the any number based on cores available in Host - this will speeds up the compilation by parallel execution 
+
+clean the source - optional
+	armmake distclan
+	This command will clean the source by removing temp files present if any.
+
+Configure
+	armmake am335x_evm_config
+
+compile
+	armmake
+	MLO and u-boot.img will be created in the same directory.
+
+	These steps are common for compiling uboot for any architecture apart from selecting cross toolchain and configuring.
+
+preparing bootbale disk:
+	Format a disk(USB/SD/CD - depends on the board) and create a bootable partion of tyme FAT32.
+	bootable partition will be created by altering the flags on the partition.
+	for fdisk, use option 'a' on the partition.
+
+Copying 
+	Copy MLO first to the newly partitioned bootable disk followed by u-boot.img and uenv.txt
+	uenv.txt will contain the env parameters for u-boot like what is the kernel image and where it has to load in RAM etc.
+	See board configuration file for more details. board manufacturares will provide this file.
+
+Loading the uboot
+	By inserting the booatable disk, u-boot(boot loader) will start.
+	Bootloader is a primary software program boots in board bringup process. without kernel or image nothing to do this apart from pin verfication and pheripheral initializayion.
+	
+
+Building kernel image:
+Get the source
+	Download the source or any kernel from kernel.org
+	git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+clean the source
+	armmake distclean
+	alias created in previous step, using the same compiling kernel.
+
+configure
+	armmake <predefined config for the target>
+	In case of beagle bone black use multi_v7_defconfig
+
+build
+	armmake
+	once it is done with build, zImage(kernel image) and am335x-boneblack.dtb(device tree blob) will be generated in arch arm/boot and arch/arm/boot/dts/ directory.
+	copy them to the bootable disk created in previous step.
+
+Loading kernel
+	By inserting the disk, kernel will be loaded after u-boot. here make sure uenv.txt contains the proper loadaddress ad fdt address. these will be provided by board manufacturers.
+
+	After this kernel will be loaded but not the prompt. kernel panic may be received at the end.
+	This is because we just loaded the kernel, kernel will invoke user space applications. So we need to load rootfs.
+
+
+Creating rootfs:
+	using buildroot tools. This will build u-boot, kernelimage and rootfs, as we already created u-boot and kernel this part can be skipped.
+
+Clone the source
+	git clone git://git.buildroot.net/buildroot
+
+Configure buildroot for Beaglebone
+	make beaglebone_defconfig
+
+build
+	make
+
+	rootfs.ext4 will be created.
+
+Copying rootfs.ext4
+	using dd we can copy the rootfs to the disk by creating seperate ext4 partition in the same bootable disk.
+
+Reference:
+	http://elinux.org/Building_for_BeagleBone
