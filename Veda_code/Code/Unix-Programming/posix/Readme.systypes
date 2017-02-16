@@ -1,0 +1,15 @@
+
+
+
+Different systems may use different no of bits to represent process id
+and other things depending on the system.
+
+For example one OS may use 32 bits for storing pid and other
+may use 64 and in future systems may use 128 bits also.
+
+When we write a portable program we need to use the datatypes in our
+code which are defined according to the system on which we are going
+to compile our C source.
+
+All the primitive system datatypes are defined ( using typedef ) in
+sys/types.h file.

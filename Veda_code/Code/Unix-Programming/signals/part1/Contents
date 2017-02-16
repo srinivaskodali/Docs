@@ -1,0 +1,13 @@
+Examples in this directory shows the details of process management.
+
+1) proc1.c -- shows different ways in which a process gets terminated.
+
+2) killproc.c -- shows how to send signals to a process.
+
+3) sighand.c  -- shows how to handle signals.
+
+4) sigign.c -- shows how to set that the signal need to be ignored/default
+		action need to be taken.
+5) readconf.c  -- shows how most of the applications re-reads conf files.
+
+

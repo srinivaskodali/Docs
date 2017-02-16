@@ -1,0 +1,46 @@
+8
+
+dir
+2
+svn://192.168.1.50/Vedarepo/Coursewares/Courseware2/Code/ddex-2.6/char/kbd
+svn://192.168.1.50/Vedarepo
+
+
+
+2007-12-26T06:27:31.764582Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ca810908-aea1-4b15-b248-ec684baf9b50
+
+one
+dir
+
+six
+dir
+
+three
+dir
+
+five
+dir
+
+two
+dir
+
+four
+dir
+

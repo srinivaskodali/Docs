@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# Each Dir file is separated with space (Becarefull) add any Dir if u want
+SUBDIRS= 14_netlink packlog \
+	10_icmp_udp_app 2_thread_tcp 4_udp 7_own_proto \
+	psniffer 11_sock_options 3_fteller_tcp 5_etc_services \
+	8_pf_packet netp2_2 12_oob_tcp 1_tcp 3_fteller_udp \
+	6_icmp 9_tcp_app 
+ 
+# I didn't include 15_myfilter contains some logical errors
+

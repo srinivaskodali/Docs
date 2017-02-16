@@ -1,0 +1,4 @@
+This is a dummy text file that the programs locker and
+non_locker will try to access.
+
+Nothing to see here... move along.

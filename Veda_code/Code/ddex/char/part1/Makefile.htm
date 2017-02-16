@@ -1,0 +1,9 @@
+obj-m :=char_driver.o
+KDIR= /lib/modules/$(shell uname -r)/build
+all:
+	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
+	gcc test_char_driver.c -o test
+	insmod char_driver.ko
+clean:
+	rm -rf *.o *.ko *.mod.* .c* .t* test Module.symvers
+	rmmod char_driver

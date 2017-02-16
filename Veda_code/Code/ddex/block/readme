@@ -1,0 +1,15 @@
+raramdisk.c : this is a block driver which assumes RAM as a block device 
+  
+
+   Testing the driver:
+
+				1) make 
+				2) insert the module (device node is created with the name sbd0)
+				3) Create a file system on the device 
+					# mkfs.ext2 /dev/sbd0
+				4) Mount the device 
+					# mount /dev/sbd0 /mnt
+				5)Create files and check in /mnt
+				6)umount the device (umount /dev/sbd0)
+				7)Remove the module
+

@@ -1,0 +1,2 @@
+ The writve() function shall be equivalent to write().  The writev() function writes iovcnt buffers of data described  by iov to the file associated with the  file  descriptorfd.
+ 

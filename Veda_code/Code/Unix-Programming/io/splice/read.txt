@@ -1,0 +1,8 @@
+	splice()  moves data between two file descriptors without copying between kernel address space and user address space.
+It transfers up to len bytes of data from the file descriptor fd_in to the file descriptor fd_out, where  one  of  the descriptors must 
+refer to a pipe.
+
+	If fd_in refers to a pipe, then off_in must be NULL.  If fd_in does not refer to a pipe and off_in is NULL, then bytes are read 
+from fd_in starting from the current file offset, and the current file offset is adjusted appropriately.   If fd_in does not refer to a 
+pipe and off_in is not NULL, then off_in must point to a buffer which specifies the starting offset from which bytes will be read from 
+fd_in; in this case, the current file offset of fd_in is not changed.  Analogous statements apply for fd_out and off_out.

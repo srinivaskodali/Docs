@@ -1,0 +1,45 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+#undef unix
+struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+ .name = __stringify(KBUILD_MODNAME),
+ .init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+ .exit = cleanup_module,
+#endif
+};
+
+static const struct modversion_info ____versions[]
+__attribute_used__
+__attribute__((section("__versions"))) = {
+	{ 0x6d134bc3, "struct_module" },
+	{ 0xdd21c285, "remap_pfn_range" },
+	{ 0x181ac807, "mem_map" },
+	{ 0xf2a644fb, "copy_from_user" },
+	{ 0x2da418b5, "copy_to_user" },
+	{ 0xa4ba433f, "cdev_del" },
+	{ 0x7485e15e, "unregister_chrdev_region" },
+	{ 0x1bb0fdf2, "class_simple_destroy" },
+	{ 0xe2f1e52c, "class_simple_device_remove" },
+	{ 0x1b7d4074, "printk" },
+	{ 0xc2fde521, "cdev_add" },
+	{ 0x2c7308cf, "cdev_alloc" },
+	{ 0xffa442b2, "class_simple_device_add" },
+	{ 0x90745417, "class_simple_create" },
+	{ 0x82038555, "kmem_cache_alloc" },
+	{ 0x6c3397fb, "malloc_sizes" },
+	{ 0x29537c9e, "alloc_chrdev_region" },
+};
+
+static const char __module_depends[]
+__attribute_used__
+__attribute__((section(".modinfo"))) =
+"depends=";
+
+
+MODULE_INFO(srcversion, "6E538E055D8F64493BDE171");

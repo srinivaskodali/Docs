@@ -1,0 +1,1 @@
+cmd_/root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/Kern-rsrc/jiffies.ko := ld -r -m elf_i386  --build-id -o /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/Kern-rsrc/jiffies.ko /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/Kern-rsrc/jiffies.o /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/Kern-rsrc/jiffies.mod.o

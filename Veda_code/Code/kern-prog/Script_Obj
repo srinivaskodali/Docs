@@ -1,0 +1,21 @@
+#! /bin/bash
+
+# Each Obj file is separated with space (Becarefull) add any Obj if u want
+
+obj-m += bh/jiq/jiq.o bh/timing/while_delay.o bh/timing/tsc.o bh/timing/tst-work-queue.o \
+	Kern-rsrc/jiffies.o Kern-rsrc/atomic.o Kern-rsrc/linked_list.o \
+	Kern-Threads/thread.o Kern-Threads/thread.o Kern-Threads/test_thread.o \
+	Locks/complte/complte.o Locks/complte/comp.o \
+	Locks/rwsem_mod/rwsem_module.o \
+	Locks/rwsem_mod/rwsem_writer1.o Locks/rwsem_mod/rwsem_writer2.o \
+        Locks/rwsem_mod/rwsem_reader1.o Locks/rwsem_mod/rwsem_reader2.o \
+	Locks/sem/module1.o Locks/sem/module2.o Locks/sem/module3.o \
+	Locks/seq_mod/seq_module.o \
+	Locks/seq_mod/seq_writer1.o Locks/seq_mod/seq_writer2.o \
+	Locks/seq_mod/seq_reader1.o Locks/seq_mod/seq_reader2.o \
+	mm/pageinfo.o mm/dram.o mm/vma.o mm/mm.o \
+	mem_cache/cache.o mem_cache/cachepool.o \
+	modules/mod.o modules/depmod.o modules/mod1.o modules/mod2.o modules/mod3.o \
+	proc/procfs_example.o proc/simple_proc.o \
+	proc/seq.o proc/simpfs.o \
+

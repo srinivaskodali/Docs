@@ -1,0 +1,21 @@
+
+We allow the applications to view the clock as a file with the following
+tion. 
+
+DDMMYYHHMMSS 
+
+The size of the file is 12 bytes ( 2 bytes for day and so on ..).
+
+File can be read as well as written ( date can be set or obtained).
+
+Real Time clock stores data in BCD format . We are not applying any conversion
+here. We just assume that the application sends data to the driver in BCD 
+format .
+
+For example to set data month as 12 the application sets it as 0x12.
+
+Data will be updated to the clock as soon as the application writes the data.
+Similarly data will be read from the clock as soon as the application
+asks for the data.
+
+

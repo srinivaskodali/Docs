@@ -1,0 +1,24 @@
+			List of Memory Debug Tools
+---------------------------------------------------------------------- 
+
+Boehm-Weiser Conservative Garbage Collector 
+valgrind
+ccmalloc, by Armin Biere (ETH) 
+Centerline TestCenter 
+Centerline ObjectCenter 
+dbmalloc, by Connor Cahill 
+Debug Malloc Library, by Gray Watson  
+Electric Fence, by Bruce Perens 
+Geodesic Systems Great Circle  
+MemCheck, by StratosWare 
+Memdebug, by Rene Schmit  
+mpatrol by Graeme Roy 
+Mprof, by Ben Zorn  
+ParaSoft Insure++  
+Purify, by Pure Software, Inc.  
+QC, by Onyx Technology  
+Sentinel 1.5, by AIB Software Corporation 
+Sentinel II, by AIB Software Corporation 
+SmartHeap by MicroQuill 
+Spotlight, by Onyx Technology 
+ZeroFault, by The Kernel Group 

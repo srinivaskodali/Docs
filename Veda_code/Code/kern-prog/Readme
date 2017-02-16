@@ -1,0 +1,19 @@
+_______________________________________________________________________________________________
+DESCRIPTION OF THE DIRECTORIES: (2.6 Kernel-Version)
+_______________________________________________________________________________________________
+
+1.BH:-  This Folder explaines about the Bottom Halves.
+
+2.Kern-Rsrc:-  This explaines the resources in kernel.
+
+3.Kern-Threads:- Kernel Threads in Modules.
+
+4.Locks:- Different Types of Locks in Kernel are explained here.
+
+5.mem_cache:- About cache in Module.
+
+6.modules:- Module Programming. (How the dependencies occurs.)
+
+7.proc:- Proc File system modules.
+
+_______________________________________________________________________________________________

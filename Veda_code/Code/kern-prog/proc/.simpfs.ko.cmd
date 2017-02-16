@@ -1,0 +1,1 @@
+cmd_/root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/proc/simpfs.ko := ld -r -m elf_i386  --build-id -o /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/proc/simpfs.ko /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/proc/simpfs.o /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/proc/simpfs.mod.o

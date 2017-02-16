@@ -1,0 +1,11 @@
+inb( ), inw( ), inl( )
+Read 1, 2, or 4 consecutive bytes, respectively, from an I/O port. The suffix "b," "w," or "l" refers, respectively, to a byte (8 bits), a word (16 bits), and a long (32 bits).
+
+inb_p( ), inw_p( ), inl_p( )
+Read 1, 2, or 4 consecutive bytes, respectively, from an I/O port, and then execute a "dummy" instruction to introduce a pause.
+
+outb( ), outw( ), outl( )
+Write 1, 2, or 4 consecutive bytes, respectively, to an I/O port.
+
+outb_p( ), outw_p( ), outl_p( )
+Write 1, 2, and 4 consecutive bytes, respectively, to an I/O port, and then execute a "dummy" instruction to introduce a pause.

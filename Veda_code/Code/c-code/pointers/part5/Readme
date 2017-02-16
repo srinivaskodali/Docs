@@ -1,0 +1,14 @@
+
+
+Electric Fence is a Library which provides implementation of malloc
+and other memory allocation, deallocation functions. It can be used to
+detect buffer overruns and accessing freed areas which are very common
+mistakes that causes problems in many c applications.
+
+Note: check remarks written in the source code to check the functionality
+of efence.
+
+For more information on Electric Fence Refer to on line man pages
+with info efence command.
+
+

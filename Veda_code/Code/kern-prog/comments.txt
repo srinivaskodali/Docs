@@ -1,0 +1,72 @@
+-Code changes to the programs in kern-prog folder, after 2.6.29 kernel version:
+
+1)Bottom halves(bh):
+-------------------
+
+a)jiq:
+In #include <linux/workqueue.h>
+	1) INIT_WORK() is taking 2 arguments instead of 3.
+	2) Member of struct work_struct(data) is of type atomic_t.
+
+b)timing:
+test-work-queue.c:
+	1) In #include <linux/workqueue.h>,
+           DECLARE_WORK() is taking 2 arguments instead of 3.
+
+tsc.c:
+	1) Function rdtsc() not present in i386 arch, so defined it in module itself.
+
+
+
+2)Locks:
+--------
+
+a)complete:
+	1) Function name of class_device_create changed to device_create.
+	2) Function name of class_device_destroy changed to device_destroy.
+
+b)semaphore:
+	1)Used #include <linux/semaphore.h> instead of #include<asm/semaphore.h>
+
+
+
+
+3)mem_cache:
+------------
+	1) The variable kmem_cache_t (used in fuctions to allocate cache memory in  
+	#include<linux/slab.h>) is changed to struct kmem_cache (defined in #include<linux/slub_def.h>
+	2) kmem_cache_create() is taking 5 arguments instead of 6.
+
+
+
+4)proc:
+-------
+
+a)simpfs.c:
+	1) In #include <linux/fs.h>, member of struct inode(i_blksize) is removed.
+	2) In Function get_sb_single(),an extra argument of struct vfsmount
+	   instance is added as 5th argument.
+
+b)simple_proc.c:
+	1) get_cmos_time() not declared in i386 arch.  
+
+
+
+5)mm:
+-----
+	1) In #include<linux/mm_types.h>, member of 'struct page'(unsigned long page_flags_t)
+	is replaced with unsigned long flags.
+	2) In #include <linux/proc_fs.h>, function name of create_proc_info_entry() is changed
+	   to create_proc_entry()(function to set up a proc dir-entry in /proc)
+	3) create_proc_entry() is taking 3 arguments only instead of 4(argument get_info_t,
+	   which takes information and pass it to the entry created in proc dir	is removed).
+	4) As get_info_t is removed, to pass information:
+		a) create an instance of struct proc_dir_entry * (which is a file-descriptor to the 
+			   entry created in proc dir).
+			struct proc_dir_entry *res;
+		b) point FD instance to create_proc_entry().
+			res=create_proc_entry(name,mode,base);
+		c) assign the read method of created proc entry to dump the information.
+			res->read_proc=read_proc;
+	                res->data=data;
+

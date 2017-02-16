@@ -1,0 +1,8 @@
+Run ft (fortune teller client and server ) along with cap1 and
+cap2 programs. you can observer that the size of packets received
+by your program cap2 will be some what smaller ( 14 bytes) than the
+packets received by cap2.
+
+the reason behine this is the frame header will not be received in
+case of  cap2 .
+

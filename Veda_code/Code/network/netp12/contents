@@ -1,0 +1,5 @@
+shows how to send receive Out of band data using tcp.
+
+
+we can use OOB for the implementation of heart beat functions to test
+whether the other end is alive or not.

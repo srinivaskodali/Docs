@@ -1,0 +1,1 @@
+cmd_/root/Documents/course_dump/network/15_myfilter/myfilter.ko := ld -r -m elf_i386  --build-id -o /root/Documents/course_dump/network/15_myfilter/myfilter.ko /root/Documents/course_dump/network/15_myfilter/myfilter.o /root/Documents/course_dump/network/15_myfilter/myfilter.mod.o

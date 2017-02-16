@@ -1,0 +1,10 @@
+
+
+
+compile c file with -fPIC option
+
+cerate so with
+
+gcc -shared -Wl,-soname,libxyz.so.1 -o libxyz.so.1.0.1 mytest.o
+
+

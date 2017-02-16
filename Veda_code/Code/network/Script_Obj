@@ -1,0 +1,5 @@
+#! /bin/bash
+
+# Each Obj file is separated with space (Becarefull) add any Obj if u want
+
+obj-m += 14_netlink/kernl_mod.o packlog/packlog.o 

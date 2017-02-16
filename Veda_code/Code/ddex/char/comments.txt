@@ -1,0 +1,42 @@
+
+	before 2.6.29:                  |  after 2.6.29:
+	--------------			   ------------	
+
+In CHAR drivers:
+
+	in </linux/device.h>:		
+	1)class_device_create()		|  1)device_create()
+	2)class_device_destroy()	|  2)device_destroy()
+
+   [*mutex occupies less memory,slightly faster and has better scalability for
+     contended workloads than semaphore.
+     so 'struct mutex' is used instead of 'struct semaphore'.]
+
+	3)used semaphore with atomic	|  3)used mutex with atomic  
+	  variables.			|    variables.  
+	  #include<asm/semaphore.h>	|    #include<linux/mutex.h>
+	  struct semaphore vsem;	|    struct mutex vmut;
+	  init_MUTEX(&vsem);		|    mutex_init(&vmut);
+	  atomic_read(&vsem.count);	|    atomic_read(&vmut.count);
+	4)down(&vsem);			|  4)mutex_lock_killable(&vmut);
+	  up(&vsem);			|    mutex_unlock(&vmut);
+
+
+
+In BLOCK drivers:
+
+	in </linux/device.h>:
+        1)class_device_create()         |  1)device_create()
+        2)class_device_destroy()        |  2)device_destroy()
+	in #include <linux/blkdev.h>:
+	3)rq_for_each_bio()		|  
+	   and bio_for_each_segment() 	|  3)rq_for_each_segment
+	4)end_that_request_first(),	|  
+	  end_that_request_last()	|  4)__blk_end_request()
+	  and blkdev_dequeue_request()  |  
+	5)Parameters of sbd_open() are changed.
+
+
+
+
+

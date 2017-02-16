@@ -1,0 +1,11 @@
+sleep_on .. used to put process to sleep. Signal will not be
+delivered to process when process is kept on wait queue.
+
+sleep_on_interruptible .. signal can be sent.
+
+sleep_on_timeout , interruptible_sleep_on_time  .. similar to above
+but wait till timout only.
+
+
+
+What is re-entrant code ? 

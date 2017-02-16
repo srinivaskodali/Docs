@@ -1,0 +1,22 @@
+______________________________________________________________________________________________
+
+DESCRIPTION:-
+		Progs Explaines about proc file system.
+
+1.simple_proc.c:-
+		Creates a file in /proc. (creates hrtime in /proc)
+
+2.procfs_example.c:-
+
+		Example about proc Interface. Creates a folder in /proc with some files.
+
+3.seq.c:-
+	
+		Creates a sequential file in /proc.
+
+4.simpfs.c:-
+
+		Trivial File System using libfs.( cat /proc/filesystems )
+
+	
+______________________________________________________________________________________________________________________________________________________________________________________________

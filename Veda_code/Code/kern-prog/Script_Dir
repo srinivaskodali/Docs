@@ -1,0 +1,7 @@
+#! /bin/bash
+
+# Each Dir file is separated with space (Becarefull) add any Dir if u want
+
+SUBDIRS= bh/jiq bh/timing Kern-rsrc Kern-Threads \
+	Locks/complte Locks/rwsem_mod Locks/rwsem_mod Locks/sem Locks/seq_mod \
+	mm mem_cache modules proc 

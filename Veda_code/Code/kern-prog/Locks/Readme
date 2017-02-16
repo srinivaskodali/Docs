@@ -1,0 +1,15 @@
+_______________________________________________________________________________________________
+
+DESCRIPTION:-
+
+	Explaines about Different Types of Locks in Kernel.
+
+1.sem:- Modules using semaphore locks.
+
+2.complete:- Complete Locks Module Programming.
+
+3.rwsem_mod:- Modules using reader-writer semaphores.
+
+4.seq_mod:- Module program having sequential Locks.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________

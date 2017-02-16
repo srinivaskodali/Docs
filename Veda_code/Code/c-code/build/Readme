@@ -1,0 +1,21 @@
+This Readme file explains about the application that we are going to create and how to use makefiles for creation of the application.
+
+Application Description:	
+	We need to create an application for saving and viewing   of the Image formats.This
+	application consists of the menu using which we can save and also view Images.
+
+	In this example ( Application ) we used two layers
+
+	1) UI -- takes care of handling user interface.
+
+	2) IML -- image manuplation layer ( takes care of different image types).
+
+	our application is designed to handle only one type of files.
+
+	When we want to build this application to take care of new images
+	we need to replace IML which takes care of new images.
+	
+	Note:
+		In this we are using the pseudo(dummy) code in this application
+		and in the real implementation of the application we need to write
+		the actual code.

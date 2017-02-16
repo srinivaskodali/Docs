@@ -1,0 +1,4 @@
+
+/* Compilation procedure */
+gcc test_char_driver.c -o test_char_driver -lrt
+

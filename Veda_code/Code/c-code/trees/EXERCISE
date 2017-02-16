@@ -1,0 +1,30 @@
+
+
+
+
+
+create a library with functions that can be used to represent a
+graph. Assume a graph to be an inter connection of GraphNodes.
+
+deine a structure to represent GraphNode
+
+Functions to be implemented.
+
+1) GraphNode *createGNode();
+2) void createLink(GraphNode *n1,GrapthNode *n2);
+3) void DestroyGraph(GraphNode *gn);
+
+Write a test program to test the library function.
+
+Hints:
+Use the following structures for implementing the above library.
+(Note : code will be very much similar to the implementation of tree)
+
+struct GLink {
+	void *node1;
+	void *node2;
+}
+typedef struct GN{
+	int nodedata;
+	struct GLink **listoflinks;
+}GraphNode;

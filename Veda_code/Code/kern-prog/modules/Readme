@@ -1,0 +1,16 @@
+_______________________________________________________________________________________________
+
+DESCRIPTION:-
+	Progs to understand module programming(linux 2.6.x Kernel-Version) 
+
+1.mod.c:-  Explaines how t write a simple module.
+
+2.mod1.c:- Explaines about Exporting symbols to kernel symbol table.
+
+3.mod2.c:- Explaines about Exporting choosen symbols .
+
+4.mod3.c:- Describes about module parametres.
+
+5.depmod.c:- Shows the module Depencies. 
+
+_____________________________________________________________________________________________________________________________________________________________________________________________

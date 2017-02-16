@@ -1,0 +1,1 @@
+cmd_/root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/char/part8/char_driver_mmap.ko := ld -r -m elf_i386  --build-id -o /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/char/part8/char_driver_mmap.ko /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/char/part8/char_driver_mmap.o /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/char/part8/char_driver_mmap.mod.o

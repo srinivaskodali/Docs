@@ -1,0 +1,1 @@
+cmd_/root/Code/ddex-2.6/ethtool_driver/nicdriver.ko := ld -m elf_i386 -m elf_i386 -r -o /root/Code/ddex-2.6/ethtool_driver/nicdriver.ko /root/Code/ddex-2.6/ethtool_driver/nicdriver.o /root/Code/ddex-2.6/ethtool_driver/nicdriver.mod.o

@@ -1,0 +1,1 @@
+cmd_/root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/Locks/sem/module3.ko := ld -r -m elf_i386  --build-id -o /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/Locks/sem/module3.ko /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/Locks/sem/module3.o /root/Documents/course_dump/lked/Code-2.6/ddex-2.6.30/kern-prog/Locks/sem/module3.mod.o
