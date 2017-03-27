@@ -27,6 +27,7 @@ void push(char item){
 }
 // to get an item from stack.
 // caller of this function should first check for error                                                                                                                                                                                                                                                                     
+void pop(char item) {
 	char item;                                                       
 	stkerr=0;
 	// check if stack is empty

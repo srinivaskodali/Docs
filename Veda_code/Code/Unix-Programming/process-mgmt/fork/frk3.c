@@ -10,7 +10,10 @@ Author : Team -C
 
 # define CHILD 0
 void sighand(int signum){
+	int childstatus;
 	printf(" I am in sig handler \n");
+
+
 }
 
 main(){

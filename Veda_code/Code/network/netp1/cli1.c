@@ -10,6 +10,10 @@
 #include<stdlib.h>
 
 main(){
+
+
+
+
 	char *serv_ip = "192.168.10.132";
 	int sockfd,ret_val;
 	struct sockaddr_in servaddr;

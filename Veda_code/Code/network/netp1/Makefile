@@ -1,4 +1,4 @@
-.PHONY :1_tcp clean
+.PHONY :1_tcp clean print
 1_tcp: cli1 cli2 cli3 srv1 srv2 srv3
 cli1 cli2 cli3 srv1 srv2 srv3:
 	gcc cli1.c  -o cli1
@@ -10,3 +10,6 @@ cli1 cli2 cli3 srv1 srv2 srv3:
 clean:
 	rm -rf cli1 cli2 cli3 srv1 srv2 srv3
 
+print: *.[c]
+	@echo `uname -r`
+	
