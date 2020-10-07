@@ -42,3 +42,10 @@ https://notes.shichao.io/apue/ch8/
 
 systemcall:
 https://www.youtube.com/watch?v=mB79rNrpOhg&t=627s
+
+
+
+HOW lINUX HANDLES INTERRUPTS: INTERRUPTS KERNEL SIDE:
+https://0xax.gitbooks.io/linux-insides/content/Interrupts/
+https://linux-kernel-labs.github.io/refs/heads/master/lectures/interrupts.html#
+https://opensource.com/article/20/10/linux-kernel-interrupts
