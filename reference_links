@@ -49,3 +49,9 @@ HOW lINUX HANDLES INTERRUPTS: INTERRUPTS KERNEL SIDE:
 https://0xax.gitbooks.io/linux-insides/content/Interrupts/
 https://linux-kernel-labs.github.io/refs/heads/master/lectures/interrupts.html#
 https://opensource.com/article/20/10/linux-kernel-interrupts
+
+
+Linus torage diagram:
+http://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram
+
+
