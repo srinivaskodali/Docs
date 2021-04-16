@@ -54,4 +54,5 @@ https://opensource.com/article/20/10/linux-kernel-interrupts
 Linus torage diagram:
 http://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram
 
-
+DTS:
+https://developer.toradex.com/device-tree-customization#Delete_properties_or_nodes
