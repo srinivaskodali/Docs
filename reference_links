@@ -58,3 +58,6 @@ DTS:
 https://developer.toradex.com/device-tree-customization#Delete_properties_or_nodes 
 
  https://blog.cloudflare.com/how-to-drop-10-million-packets/
+ 
+ LINUX Internals:
+ https://0xax.gitbooks.io/linux-insides/content/Initialization/linux-initialization-1.html
