@@ -62,3 +62,12 @@ https://developer.toradex.com/device-tree-customization#Delete_properties_or_nod
  LINUX Internals:
  https://0xax.gitbooks.io/linux-insides/content/Initialization/linux-initialization-1.html
  https://linux-kernel-labs.github.io/refs/heads/master/index.html
+
+
+
+PCIe:
+A Practical Tutorial on PCIe for Total Beginners on Windows (Part 1)
+https://ctf.re/windows/kernel/pcie/tutorial/2023/02/14/pcie-part-1/
+
+PCIe Part 2 - All About Memory: MMIO, DMA, TLPs, and more!
+https://ctf.re/kernel/pcie/tutorial/dma/mmio/tlp/2024/03/26/pcie-part-2/
